@@ -26,6 +26,12 @@
     /* Interactive 3D henna gallery */
     .gallery-item,.about-visual,.course-card{transform-style:preserve-3d;perspective:1000px;will-change:transform}
     .gallery-item img,.about-visual img,.course-photo img{transform:translateZ(0) scale(1.015);transition:transform .75s cubic-bezier(.2,.7,.2,1),filter .5s}
+    .course-photo{overflow:hidden;transform-style:preserve-3d}
+    .course-photo img{animation:courseImageDrift 9s ease-in-out infinite;will-change:transform}
+    .course-card:nth-child(2) .course-photo img{animation-delay:-3s}
+    .course-card:nth-child(3) .course-photo img{animation-delay:-6s}
+    @keyframes courseImageDrift{0%,100%{transform:translate3d(0,0,0) scale(1.025)}50%{transform:translate3d(0,-5px,12px) scale(1.055)}}
+    @media(hover:hover) and (pointer:fine){.course-card:hover .course-photo img{animation-play-state:paused;transform:translateZ(28px) scale(1.1);filter:saturate(1.12)}}
     .gallery-item:hover img{transform:translateZ(34px) scale(1.09);filter:saturate(1.12)}
     .gallery-item:after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(135deg,#fff2,transparent 40%,#24181218);opacity:.45;transition:opacity .4s}
     .gallery-item:hover:after{opacity:.9}
