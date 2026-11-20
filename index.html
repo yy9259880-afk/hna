@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#211712">
+  <meta name="description" content="Sanaa Henna Academy — Découvrez l'art du henné marocain et développez votre créativité.">
+  <title>Sanaa Henna Academy — Learn the Art. Create Beauty.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--ink:#241812;--brown:#4b2d20;--clay:#a85e43;--terracotta:#c77a5b;--sand:#e9dccb;--cream:#f8f3eb;--gold:#bd9860;--muted:#88796e;--white:#fffdf9;--serif:'Playfair Display',serif;--sans:'DM Sans',sans-serif}
+    *{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth;scroll-padding-top:90px}body{font-family:var(--sans);background:var(--cream);color:var(--ink);overflow-x:hidden}a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}button{cursor:pointer}.announcement{background:var(--ink);color:#e8d7c1;text-align:center;padding:9px 16px;font-size:10px;letter-spacing:2.2px;text-transform:uppercase}.nav{height:84px;display:flex;align-items:center;justify-content:space-between;padding:0 6.5%;position:sticky;top:0;z-index:50;background:rgba(248,243,235,.92);backdrop-filter:blur(18px);border-bottom:1px solid rgba(75,45,32,.1)}.brand{display:flex;align-items:center;gap:12px}.brand-mark{width:43px;height:43px;border:1px solid var(--gold);border-radius:50%;display:grid;place-items:center;color:var(--clay);font-family:var(--serif);font-size:25px}.brand-name{font-family:var(--serif);font-size:18px;line-height:1.05}.brand-name small{display:block;font:9px var(--sans);letter-spacing:2.8px;text-transform:uppercase;color:var(--muted);margin-top:5px}.nav-links{display:flex;gap:29px;align-items:center;font-size:11px;letter-spacing:1px;text-transform:uppercase;color:#5f4b40}.nav-links a{transition:color .25s}.nav-links a:hover{color:var(--clay)}.nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:14px 22px;background:var(--clay);color:white;border:1px solid var(--clay);font-size:10px;letter-spacing:1.5px;text-transform:uppercase;transition:.3s}.nav-cta:hover,.btn:hover{background:var(--ink);border-color:var(--ink);transform:translateY(-2px)}.menu-toggle{display:none;background:none;border:0;font-size:25px;color:var(--ink)}
+    .hero{min-height:690px;display:grid;grid-template-columns:1.02fr .98fr;background:#2b1c15;color:var(--cream);position:relative;overflow:hidden}.hero-copy{padding:115px 8% 100px 13%;position:relative;z-index:2;display:flex;flex-direction:column;justify-content:center}.eyebrow{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);display:flex;align-items:center;gap:12px}.eyebrow:before{content:"";width:35px;height:1px;background:var(--gold)}.hero h1{font:clamp(48px,6vw,82px)/1.05 var(--serif);font-weight:400;margin:28px 0 24px;max-width:600px}.hero h1 em{color:#d39a78;font-weight:400}.hero p{max-width:430px;color:#d3c3b5;line-height:1.9;font-size:14px}.hero-actions{display:flex;gap:14px;align-items:center;margin-top:35px;flex-wrap:wrap}.btn-outline{background:transparent;border:1px solid rgba(248,243,235,.45);color:var(--cream)}.btn-outline:hover{background:var(--cream);color:var(--ink)}.hero-note{margin-top:62px;color:#aa9686;font-size:9px;letter-spacing:2px;text-transform:uppercase}.hero-image{position:relative;min-height:600px;background:linear-gradient(90deg,#2b1c15 0%,transparent 28%),url('sanaa-henna-assets/henna-01.png') center 44%/cover}.hero-image:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(32,19,13,.35),transparent 45%),linear-gradient(90deg,rgba(43,28,21,.2),transparent)}.hero-stamp{position:absolute;z-index:2;bottom:55px;right:9%;width:128px;height:128px;border:1px solid rgba(230,197,153,.75);border-radius:50%;display:grid;place-items:center;text-align:center;color:#f0d9b9;font:13px/1.6 var(--serif);transform:rotate(-12deg);background:rgba(39,24,17,.28);backdrop-filter:blur(5px)}.hero-stamp span{font:8px var(--sans);letter-spacing:2px;text-transform:uppercase;display:block}
+    .section{padding:110px 8%}.section-head{text-align:center;max-width:650px;margin:0 auto 58px}.kicker{font-size:9px;letter-spacing:3px;text-transform:uppercase;color:var(--clay)}.section h2{font:clamp(34px,4.3vw,54px)/1.15 var(--serif);font-weight:400;margin:17px 0}.section-head p,.body-copy{color:var(--muted);font-size:13px;line-height:1.9}.about{display:grid;grid-template-columns:1fr 1fr;gap:9%;align-items:center;background:var(--white)}.about-visual{position:relative;padding:0 35px 35px 0}.about-visual img{width:100%;height:520px;object-fit:cover;display:block}.about-visual:after{content:"";position:absolute;right:0;bottom:0;width:65%;height:65%;border:1px solid var(--gold);z-index:0}.about-visual img{position:relative;z-index:1}.about-copy h2{font:clamp(36px,4vw,53px)/1.15 var(--serif);font-weight:400;margin:18px 0 22px}.about-copy .arabic{font:30px Amiri,serif;color:var(--clay);margin-bottom:20px}.about-copy p{font-size:13px;color:var(--muted);line-height:2;margin-bottom:17px}.signature{font:italic 25px var(--serif);color:var(--clay);margin-top:28px}.mini-label{font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-top:4px}
+    .courses{background:#eee4d8}.filters{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin:-20px 0 38px}.filter{border:1px solid #d4c3b2;background:transparent;color:#6f5b4e;padding:10px 18px;font-size:9px;letter-spacing:1.3px;text-transform:uppercase;transition:.25s}.filter.active,.filter:hover{background:var(--ink);color:white;border-color:var(--ink)}.course-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.course-card{background:var(--white);transition:.35s;cursor:pointer}.course-card:hover{transform:translateY(-8px);box-shadow:0 22px 45px #4b2d2017}.course-photo{height:250px;overflow:hidden;position:relative}.course-photo img{width:100%;height:100%;object-fit:cover;transition:transform .7s}.course-card:hover img{transform:scale(1.06)}.level{position:absolute;top:17px;left:17px;background:#f8f3ebed;padding:8px 11px;font-size:8px;letter-spacing:1.5px;text-transform:uppercase}.course-info{padding:25px}.course-meta{display:flex;justify-content:space-between;color:var(--clay);font-size:9px;letter-spacing:1px;text-transform:uppercase}.course-info h3{font:25px var(--serif);font-weight:400;margin:14px 0 10px}.course-info p{font-size:12px;line-height:1.8;color:var(--muted);min-height:64px}.course-bottom{display:flex;justify-content:space-between;align-items:center;border-top:1px solid #eee4d8;padding-top:18px;margin-top:18px;font-size:10px;color:var(--muted)}.text-link{color:var(--clay);font-size:9px;letter-spacing:1.4px;text-transform:uppercase;border:0;background:none}
+    .quote-band{background:var(--brown);color:var(--cream);padding:76px 8%;text-align:center;position:relative;overflow:hidden}.quote-band:before,.quote-band:after{content:"✳";position:absolute;color:#d4b17c30;font-size:150px}.quote-band:before{left:5%;top:-45px}.quote-band:after{right:5%;bottom:-70px}.quote-band blockquote{font:clamp(25px,3.4vw,42px)/1.35 var(--serif);max-width:850px;margin:auto}.quote-band p{font-size:9px;letter-spacing:2px;color:#d5b88e;margin-top:25px;text-transform:uppercase}
+    .gallery{background:var(--white)}.gallery-grid{display:grid;grid-template-columns:1.15fr .85fr 1fr;grid-template-rows:230px 230px;gap:14px}.gallery-grid img{width:100%;height:100%;object-fit:cover;transition:transform .7s;display:block}.gallery-item{overflow:hidden;position:relative}.gallery-item:hover img{transform:scale(1.06)}.gallery-item:first-child{grid-row:span 2}.gallery-item:nth-child(4){grid-column:2/4}.gallery-caption{position:absolute;bottom:16px;left:18px;color:white;font:18px var(--serif);text-shadow:0 2px 10px #000}
+    .testimonials{background:#eee4d8}.demo-note{display:inline-block;margin-top:13px;padding:8px 12px;border:1px solid #d5bda5;color:#8b674f;font-size:9px;letter-spacing:1px;text-transform:uppercase}.testimonial-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.testimonial{background:var(--cream);padding:30px}.stars{color:var(--gold);letter-spacing:4px;font-size:13px}.testimonial blockquote{font:19px/1.6 var(--serif);margin:20px 0;color:#5b4336}.testimonial small{font-size:9px;color:var(--muted);letter-spacing:1.3px;text-transform:uppercase}
+    .register{background:#2b1c15;color:var(--cream);display:grid;grid-template-columns:.85fr 1.15fr;gap:9%;align-items:start}.register .section-intro h2{font:clamp(36px,4vw,52px)/1.15 var(--serif);font-weight:400;margin:18px 0}.register .section-intro p{color:#c7b6a7;font-size:13px;line-height:1.9}.register-detail{margin-top:34px;color:#d2b88f;font-size:10px;letter-spacing:1.2px;line-height:2}.form-card{background:var(--cream);color:var(--ink);padding:38px}.form-card h3{font:28px var(--serif);font-weight:400;margin-bottom:8px}.form-card>p{font-size:11px;color:var(--muted);margin-bottom:25px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:17px}.field{display:flex;flex-direction:column;gap:8px}.field.full{grid-column:1/-1}.field label{font-size:9px;letter-spacing:1.2px;text-transform:uppercase;color:#70594b}.field input,.field select,.field textarea{border:1px solid #dfd2c4;background:#fffdf9;padding:13px;color:var(--ink);outline:none;font-size:12px;width:100%;border-radius:0}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--clay)}.field textarea{min-height:85px;resize:vertical}.form-submit{margin-top:20px;width:100%;border:0}.form-message{display:none;margin-top:16px;padding:13px;background:#e5eddf;color:#3f633d;font-size:12px;line-height:1.6}.form-message.show{display:block}.form-disclaimer{font-size:9px;color:var(--muted);margin-top:12px;line-height:1.6}
+    footer{background:#1d130f;color:#c8b6a7;padding:65px 8% 25px}.footer-top{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:8%;padding-bottom:45px}.footer-brand .brand-name{color:var(--cream);font-size:22px}.footer-brand p{font-size:11px;line-height:1.9;color:#9f8b7b;max-width:280px;margin-top:20px}.footer-col h4{font:17px var(--serif);color:var(--cream);font-weight:400;margin-bottom:20px}.footer-col a,.footer-col p{display:block;font-size:10px;color:#a99483;margin:12px 0}.footer-col a:hover{color:#e4bd8b}.footer-bottom{border-top:1px solid #ffffff20;padding-top:22px;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;font-size:9px;color:#887568;letter-spacing:.5px}.footer-bottom strong{color:#d8b77f;font-weight:500;letter-spacing:1.5px}.whatsapp{position:fixed;right:24px;bottom:24px;z-index:60;width:54px;height:54px;border-radius:50%;display:grid;place-items:center;background:#3f8b62;color:white;box-shadow:0 8px 25px #0003;font-size:23px;transition:.3s}.whatsapp:hover{transform:translateY(-4px) scale(1.04)}.modal{position:fixed;inset:0;background:#1b100edb;z-index:100;display:none;place-items:center;padding:20px}.modal.open{display:grid}.modal-panel{background:var(--cream);max-width:540px;width:100%;padding:38px;position:relative;animation:rise .35s ease}.modal-close{position:absolute;right:18px;top:14px;border:0;background:none;font-size:25px;color:var(--brown)}.modal-panel h3{font:32px var(--serif);font-weight:400;margin:12px 0}.modal-panel p{font-size:12px;line-height:1.9;color:var(--muted);margin-bottom:20px}.reveal{opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s ease}.reveal.visible{opacity:1;transform:none}@keyframes rise{from{opacity:0;transform:translateY(15px)}to{opacity:1;transform:none}}@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}.hero-stamp{animation:float 6s ease-in-out infinite}
+    @media(max-width:900px){.nav{padding:0 5%;height:75px}.nav-links{gap:15px}.nav-links a{font-size:9px}.nav-cta{padding:12px 14px;font-size:9px}.hero-copy{padding:90px 8%}.hero{min-height:600px}.section{padding:85px 6%}.about{gap:6%}.course-grid{grid-template-columns:repeat(2,1fr)}.register{gap:5%}.form-card{padding:28px}}
+    @media(max-width:680px){.announcement{font-size:8px;letter-spacing:1.3px}.nav{height:70px}.menu-toggle{display:block}.nav-cta{display:none}.nav-links{display:none;position:absolute;top:70px;left:0;right:0;background:var(--cream);padding:24px 7%;flex-direction:column;align-items:flex-start;gap:22px;border-bottom:1px solid #ddd}.nav-links.open{display:flex}.nav-links a{font-size:11px}.hero{grid-template-columns:1fr;min-height:0}.hero-copy{padding:85px 8% 65px}.hero h1{font-size:53px}.hero-image{min-height:380px;background-position:center 42%}.hero-stamp{width:105px;height:105px;right:8%;bottom:25px;font-size:11px}.section{padding:75px 7%}.about{grid-template-columns:1fr;gap:45px}.about-visual img{height:390px}.about-copy{order:-1}.course-grid{grid-template-columns:1fr}.course-photo{height:260px}.gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:220px 170px 170px}.gallery-item:first-child{grid-row:span 2}.gallery-item:nth-child(4){grid-column:1/-1}.testimonial-grid{grid-template-columns:1fr}.register{grid-template-columns:1fr;gap:40px}.form-card{padding:25px 20px}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.footer-top{grid-template-columns:1fr 1fr;gap:35px}.footer-brand{grid-column:1/-1}.footer-bottom{flex-direction:column}.quote-band{padding:65px 8%}.quote-band:before,.quote-band:after{font-size:90px}}
+
+    /* Interactive 3D henna gallery */
+    .gallery-item,.about-visual,.course-card{transform-style:preserve-3d;perspective:1000px;will-change:transform}
+    .gallery-item img,.about-visual img,.course-photo img{transform:translateZ(0) scale(1.015);transition:transform .75s cubic-bezier(.2,.7,.2,1),filter .5s}
+    .gallery-item:hover img{transform:translateZ(34px) scale(1.09);filter:saturate(1.12)}
+    .gallery-item:after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(135deg,#fff2,transparent 40%,#24181218);opacity:.45;transition:opacity .4s}
+    .gallery-item:hover:after{opacity:.9}
+    .henna-float{animation:hennaFloat 7s ease-in-out infinite;transform-style:preserve-3d}
+    @keyframes hennaFloat{0%,100%{transform:translateY(0) rotateY(-2deg)}50%{transform:translateY(-12px) rotateY(2deg)}}
+    .hero-image{transform-style:preserve-3d}
+    .hero-stamp{box-shadow:0 18px 45px #0004;transform:translateZ(45px) rotate(-12deg)}
+    @media(hover:hover) and (pointer:fine){.course-card:hover{transform:translateY(-9px) rotateX(1.5deg) rotateY(-1deg)}.about-visual:hover img{transform:translateZ(25px) scale(1.025)}}
+
+    @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+  </style>
+</head>
+<body>
+  <div class="announcement">L'art du henné marocain · Apprendre avec passion · Créer avec élégance</div>
+  <header class="nav">
+    <a class="brand" href="#home" aria-label="Sanaa Henna Academy accueil"><span class="brand-mark">س</span><span class="brand-name">Sanaa Henna Academy<small>Moroccan Henna Education</small></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Accueil</a><a href="#about">Notre histoire</a><a href="#courses">Formations</a><a href="#gallery">Galerie</a><a href="#register">Inscription</a>
+    </nav>
+    <a class="nav-cta" href="#register">Rejoindre l'académie <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow">L'héritage rencontre la créativité</div>
+        <h1>Learn the Art.<br><em>Create Beauty.</em></h1>
+        <p>Entrez dans l'univers délicat du henné marocain. Découvrez ses motifs, maîtrisez ses gestes et donnez vie à votre propre signature artistique.</p>
+        <div class="hero-actions"><a class="btn" href="#courses">Découvrir les formations <span>↗</span></a><a class="btn btn-outline" href="#about">Notre univers</a></div>
+        <div class="hero-note">Sanaa Henna Academy · Art · Culture · Transmission</div>
+      </div>
+      <div class="hero-image" role="img" aria-label="Art du henné et ambiance artisanale marocaine"><div class="hero-stamp">فنّ الحناء<span>Beauty in every detail</span></div></div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="about-visual reveal"><img src="sanaa-henna-assets/henna-01.png" alt="Détail artistique inspiré de l'artisanat marocain" loading="lazy"></div>
+      <div class="about-copy reveal"><div class="kicker">Bienvenue dans notre univers</div><div class="arabic">فنّ يُروى بأناملِكِ</div><h2>Un art précieux.<br>Une passion à transmettre.</h2><p>Sanaa Henna Academy est un concept d'espace éducatif dédié à la découverte et à l'apprentissage de l'art du henné. Notre ambition : mettre en lumière la richesse des motifs marocains et encourager chaque apprenante à développer son propre style.</p><p>À travers des parcours progressifs, les participantes peuvent explorer les bases, travailler la précision du geste et s'initier à la composition de motifs harmonieux.</p><div class="signature">Sanaa</div><div class="mini-label">Fondatrice · Présentation de démonstration</div></div>
+    </section>
+
+    <section class="section courses" id="courses">
+      <div class="section-head reveal"><div class="kicker">Apprendre à votre rythme</div><h2>Nos formations</h2><p>Des exemples de parcours conçus pour illustrer l'expérience de l'académie. Les intitulés, durées et programmes ci-dessous sont des contenus de démonstration.</p></div>
+      <div class="filters reveal" id="filters"><button class="filter active" data-filter="all">Toutes</button><button class="filter" data-filter="beginner">Débutant</button><button class="filter" data-filter="intermediate">Intermédiaire</button><button class="filter" data-filter="advanced">Avancé</button></div>
+      <div class="course-grid" id="courseGrid">
+        <article class="course-card reveal" data-level="beginner" data-course="Fondations du henné"><div class="course-photo"><img src="https://images.unsplash.com/photo-1604881991720-f91add269ded?auto=format&fit=crop&w=800&q=85" alt="Motifs floraux de henné" loading="lazy"><span class="level">Niveau débutant</span></div><div class="course-info"><div class="course-meta"><span>Les essentiels</span><span>Démo · 4 séances</span></div><h3>Fondations du henné</h3><p>Découvrir les outils, la préparation, la posture et les premiers tracés pour gagner en confiance.</p><div class="course-bottom"><span>Initiation · Démonstration</span><button class="text-link details-btn">Voir le programme ↗</button></div></div></article>
+        <article class="course-card reveal" data-level="intermediate" data-course="Motifs marocains"><div class="course-photo"><img src="https://images.unsplash.com/photo-1590736969955-71cc94901144?auto=format&fit=crop&w=800&q=85" alt="Décoration et motifs ornementaux" loading="lazy"><span class="level">Niveau intermédiaire</span></div><div class="course-info"><div class="course-meta"><span>Tradition & détails</span><span>Démo · 6 séances</span></div><h3>Motifs marocains</h3><p>Explorer les inspirations géométriques et florales, les répétitions et l'équilibre des compositions.</p><div class="course-bottom"><span>Technique · Démonstration</span><button class="text-link details-btn">Voir le programme ↗</button></div></div></article>
+        <article class="course-card reveal" data-level="advanced" data-course="Composition artistique"><div class="course-photo"><img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=85" alt="Ambiance élégante de célébration" loading="lazy"><span class="level">Niveau avancé</span></div><div class="course-info"><div class="course-meta"><span>Signature & créativité</span><span>Démo · 8 séances</span></div><h3>Composition artistique</h3><p>Construire un dessin cohérent, associer les motifs et développer une signature visuelle personnelle.</p><div class="course-bottom"><span>Créativité · Démonstration</span><button class="text-link details-btn">Voir le programme ↗</button></div></div></article>
+      </div>
+    </section>
+
+    <section class="quote-band"><blockquote>« Chaque motif raconte une histoire. Chaque geste fait vivre un héritage. »</blockquote><p>La beauté de l'artisanat marocain</p></section>
+
+    <section class="section gallery" id="gallery">
+      <div class="section-head reveal"><div class="kicker">Inspiration & patrimoine</div><h2>L'art dans chaque détail</h2><p>Une sélection visuelle d'inspiration autour des gestes, des ornements et de l'esthétique marocaine.</p></div>
+      <div class="gallery-grid reveal">
+        <div class="gallery-item"><img src="sanaa-henna-assets/henna-01.png" alt="Inspiration henné" loading="lazy"><span class="gallery-caption">Lignes & délicatesse</span></div>
+        <div class="gallery-item"><img src="sanaa-henna-assets/henna-02.png" alt="Motif floral de henné sur la main" loading="lazy"><span class="gallery-caption">Motifs floraux</span></div>
+        <div class="gallery-item"><img src="https://images.unsplash.com/photo-1610992015732-2449b76344bc?auto=format&fit=crop&w=700&q=85" alt="Détails artisanaux" loading="lazy"></div>
+        <div class="gallery-item"><img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1000&q=85" alt="Ambiance de cérémonie" loading="lazy"><span class="gallery-caption">Tradition & célébration</span></div>
+      </div>
+    </section>
+
+    <section class="section testimonials">
+      <div class="section-head reveal"><div class="kicker">Paroles & expérience</div><h2>Un apprentissage qui inspire</h2><p>Cette section présente des exemples de mise en page uniquement.</p><span class="demo-note">Avis fictifs · Démonstration uniquement</span></div>
+      <div class="testimonial-grid">
+        <article class="testimonial reveal"><div class="stars">★★★★★</div><blockquote>« J'ai découvert les bases avec un parcours clair et progressif. »</blockquote><small>Exemple d'avis · Apprenante fictive</small></article>
+        <article class="testimonial reveal"><div class="stars">★★★★★</div><blockquote>« Une belle façon d'explorer les motifs et de laisser parler sa créativité. »</blockquote><small>Exemple d'avis · Apprenante fictive</small></article>
+        <article class="testimonial reveal"><div class="stars">★★★★★</div><blockquote>« Les détails et la patience changent complètement le résultat. »</blockquote><small>Exemple d'avis · Apprenante fictive</small></article>
+      </div>
+    </section>
+
+    <section class="section register" id="register">
+      <div class="section-intro reveal"><div class="kicker">Votre prochain chapitre commence ici</div><h2>Prête à découvrir l'art du henné ?</h2><p>Faites-nous part de votre intérêt. L'équipe de l'académie pourra vous recontacter pour vous communiquer les informations sur les prochaines sessions.</p><div class="register-detail">INSCRIPTION · DEMANDE D'INFORMATION<br>Un premier pas vers votre créativité.</div></div>
+      <div class="form-card reveal"><h3>Demande d'inscription</h3><p>Remplissez le formulaire de démonstration ci-dessous.</p>
+        <form id="registrationForm">
+          <div class="form-grid">
+            <div class="field"><label for="name">Nom complet *</label><input id="name" name="name" required minlength="2" placeholder="Votre nom"></div>
+            <div class="field"><label for="phone">Téléphone / WhatsApp *</label><input id="phone" name="phone" required type="tel" pattern="[+0-9 ()-]{8,20}" placeholder="+212 6 00 00 00 00"></div>
+            <div class="field"><label for="email">Adresse e-mail *</label><input id="email" name="email" type="email" required placeholder="vous@exemple.com"></div>
+            <div class="field"><label for="level">Votre niveau *</label><select id="level" name="level" required><option value="">Choisir</option><option>Débutant</option><option>Intermédiaire</option><option>Avancé</option></select></div>
+            <div class="field full"><label for="course">Formation souhaitée *</label><select id="course" name="course" required><option value="">Choisir une formation</option><option>Fondations du henné</option><option>Motifs marocains</option><option>Composition artistique</option><option>Je souhaite être conseillée</option></select></div>
+            <div class="field full"><label for="message">Votre message (facultatif)</label><textarea id="message" name="message" placeholder="Dites-nous ce que vous aimeriez apprendre..."></textarea></div>
+          </div>
+          <button class="btn form-submit" type="submit">Envoyer ma demande <span>↗</span></button>
+          <div class="form-message" id="formMessage" role="status" aria-live="polite"></div>
+          <p class="form-disclaimer">Démonstration : aucune donnée n'est envoyée ni enregistrée. Connectez ce formulaire à une adresse e-mail ou un service de gestion avant la mise en ligne réelle.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-top">
+      <div class="footer-brand"><a class="brand" href="#home"><span class="brand-mark">س</span><span class="brand-name">Sanaa Henna Academy<small>Moroccan Henna Education</small></span></a><p>Learn the Art. Create Beauty. Un espace dédié à la découverte et à la transmission de l'art du henné marocain.</p></div>
+      <div class="footer-col"><h4>Explorer</h4><a href="#about">Notre histoire</a><a href="#courses">Formations</a><a href="#gallery">Galerie</a><a href="#register">Inscription</a></div>
+      <div class="footer-col"><h4>Contact</h4><p>Maroc · Sur rendez-vous</p><a href="#register">Demander des informations ↗</a><p>WhatsApp : numéro à configurer</p></div>
+    </div>
+    <div class="footer-bottom"><span>© <span id="year"></span> Sanaa Henna Academy. Tous droits réservés.</span><span>Designed with care by <strong>TEAM NEXORA</strong></span></div>
+  </footer>
+
+  <a class="whatsapp" id="whatsappLink" href="#" target="_blank" rel="noopener" aria-label="Contacter sur WhatsApp" title="WhatsApp">✆</a>
+
+  <div class="modal" id="courseModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal-panel"><button class="modal-close" id="modalClose" aria-label="Fermer">×</button><div class="kicker">Programme de démonstration</div><h3 id="modalTitle">Formation</h3><p id="modalText"></p><a class="btn" href="#register" id="modalRegister">Demander des informations ↗</a></div></div>
+
+  <script>
+    // À CONFIGURER AVANT PUBLICATION : remplacez par le numéro WhatsApp réel au format international, sans + ni espaces.
+    const WHATSAPP_NUMBER = "212600000000";
+    const whatsappLink = document.getElementById("whatsappLink");
+    whatsappLink.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent("Bonjour Sanaa Henna Academy, je souhaite recevoir des informations sur vos formations.")}`;
+
+    const menuToggle = document.getElementById("menuToggle");
+    const navLinks = document.getElementById("navLinks");
+    menuToggle.addEventListener("click", () => {
+      const opened = navLinks.classList.toggle("open");
+      menuToggle.setAttribute("aria-expanded", String(opened));
+      menuToggle.textContent = opened ? "×" : "☰";
+    });
+    navLinks.querySelectorAll("a").forEach(link => link.addEventListener("click", () => {
+      navLinks.classList.remove("open");
+      menuToggle.setAttribute("aria-expanded", "false");
+      menuToggle.textContent = "☰";
+    }));
+
+    document.getElementById("filters").addEventListener("click", e => {
+      const button = e.target.closest("[data-filter]");
+      if (!button) return;
+      document.querySelectorAll(".filter").forEach(b => b.classList.remove("active"));
+      button.classList.add("active");
+      document.querySelectorAll(".course-card").forEach(card => {
+        card.style.display = button.dataset.filter === "all" || card.dataset.level === button.dataset.filter ? "" : "none";
+      });
+    });
+
+    const courseDescriptions = {
+      "Fondations du henné":"Programme exemple : découverte des cônes et des outils, préparation et posture, exercices de lignes et de points, premiers motifs simples. Durée indicative de démonstration : 4 séances.",
+      "Motifs marocains":"Programme exemple : inspirations florales et géométriques, symétrie, répétition des motifs, composition sur papier puis exercices pratiques. Durée indicative de démonstration : 6 séances.",
+      "Composition artistique":"Programme exemple : construction d'une composition, équilibre des espaces, association des motifs, développement d'un style personnel et réalisation d'un projet final. Durée indicative de démonstration : 8 séances."
+    };
+    const modal = document.getElementById("courseModal");
+    document.querySelectorAll(".details-btn").forEach(btn => btn.addEventListener("click", () => {
+      const name = btn.closest(".course-card").dataset.course;
+      document.getElementById("modalTitle").textContent = name;
+      document.getElementById("modalText").textContent = courseDescriptions[name] + " Ce contenu est fictif et doit être validé par l'académie avant publication.";
+      modal.classList.add("open");
+    }));
+    document.getElementById("modalClose").addEventListener("click", () => modal.classList.remove("open"));
+    modal.addEventListener("click", e => { if (e.target === modal) modal.classList.remove("open"); });
+    document.getElementById("modalRegister").addEventListener("click", () => modal.classList.remove("open"));
+    document.addEventListener("keydown", e => { if (e.key === "Escape") modal.classList.remove("open"); });
+
+    document.getElementById("registrationForm").addEventListener("submit", e => {
+      e.preventDefault();
+      const form = e.currentTarget;
+      if (!form.reportValidity()) return;
+      const name = document.getElementById("name").value.trim();
+      const message = document.getElementById("formMessage");
+      message.textContent = `Merci ${name} ! Votre formulaire de démonstration est valide. Aucune demande n'a été transmise : le formulaire doit être connecté à un service avant utilisation réelle.`;
+      message.classList.add("show");
+      form.reset();
+    });
+
+
+    // Subtle pointer-based 3D depth on desktop; motion is disabled on touch/reduced-motion devices.
+    if (window.matchMedia("(hover:hover) and (pointer:fine)").matches &&
+        !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      document.querySelectorAll(".gallery-item, .course-card, .about-visual").forEach(card => {
+        card.addEventListener("pointermove", event => {
+          const rect = card.getBoundingClientRect();
+          const x = (event.clientX - rect.left) / rect.width - 0.5;
+          const y = (event.clientY - rect.top) / rect.height - 0.5;
+          card.style.transform = `perspective(1000px) rotateX(${-y * 5}deg) rotateY(${x * 5}deg) translateY(-3px)`;
+        });
+        card.addEventListener("pointerleave", () => { card.style.transform = ""; });
+      });
+    }
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+    const observer = new IntersectionObserver(entries => entries.forEach(entry => {
+      if (entry.isIntersecting) { entry.target.classList.add("visible"); observer.unobserve(entry.target); }
+    }), {threshold:.12});
+    document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
